@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,viewport-fit=cover" />
+    <meta name="color-theme" content="#ffc252" />
+    <title>Store notes and learning goals while you are coding</title>
+    <link rel="manifest" href="app.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/icon-512.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="sw-register.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <h1>Codepad Masters</h1>
+    <form>
+      <textarea placeholder="Enter your new note"></textarea>
+      <ul id="toolbar">
+        <li>
+          <button type="submit">
+            <span class="icon">save</span>
+            Save
+          </button>
+        </li>
+      </ul>
+    </form>
+    <ul id="toolbar">
+      <li>
+        <button id="btnLearn">
+          <span class="icon">school</span>
+          Learn
+        </button>
+      </li>
+      <li>
+        <button id="btnShare">
+          <span class="icon">share</span>
+          Share
+        </button>
+      </li>
+      <li id="itemInstall">
+        <button id="btnInstall">
+          <span class="icon">download</span>
+          Install
+        </button>
+      </li>
+    </ul>
+    <ul id="notes"></ul>
+  </body>
+</html>
